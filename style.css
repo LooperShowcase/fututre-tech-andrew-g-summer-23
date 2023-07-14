@@ -1,0 +1,74 @@
+body {
+  background-color: gray;
+}
+
+.loop_logo {
+  float: right;
+  width: 7%;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -15px 10px 0px 10px;
+  justify-content: space-between;
+}
+
+.container {
+  border-radius: 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#text-output {
+  text-align: left;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  border-width: 2px;
+  border-color: black;
+  border-style: dashed;
+  margin-bottom: 2%;
+}
+
+input {
+  background-color: rgb(67, 215, 163);
+  border-width: 2px;
+  border-color: black;
+  border-style: dotted;
+}
+
+button {
+  background-color: rgb(0, 196, 127);
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 146, 95);
+}
+
+#intro-txt {
+  margin-top: 3px;
+  margin-left: 5px;
+  color: black;
+}
+
+#intro-txt2 {
+  margin-top: -10px;
+  margin-left: 5px;
+  color: black;
+}
+
+#label-container {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
