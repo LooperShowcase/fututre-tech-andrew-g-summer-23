@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rizz A.I. || Offical</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/3/AmazonStores/ATVPDKIKX0DER/94d81fd9b3f8e38c06390e50c2cf07a7.w400.h400.jpg"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="number"></h1>
 
-      <div id="text-output">
-        <p id="intro-txt"></p>
-        <p id="intro-txt2"></p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizz A.I. || Offical</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon"
+    href="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/3/AmazonStores/ATVPDKIKX0DER/94d81fd9b3f8e38c06390e50c2cf07a7.w400.h400.jpg" />
+</head>
 
-      <form
-        onsubmit="event.preventDefault();
-        UserChatAdd(document.getElementById('number').value, document.getElementById('input_text').value); ConnectionTest();"
-      >
-        <input id="input_text" type="text" />
-        <button>submit</button>
-      </form>
+<body>
+  <div class="container">
+    <h1 id="number"></h1>
+
+    <div id="text-output">
+      <p id="intro-txt"></p>
+      <p id="intro-txt2"></p>
     </div>
 
-    <center>
-      <br />
-      <br />
-      <div>Teachable Machine Image Model</div>
-      <button type="button" onclick="init()">Start</button>
-      <div id="webcam-container"></div>
-      <div id="label-container"></div>
-      <br />
-      <br />
-    </center>
+    <form
+      onsubmit="event.preventDefault();
+        UserChatAdd(document.getElementById('number').value, document.getElementById('input_text').value); ConnectionTest();">
+      <input id="input_text" type="text" />
+      <center><button>submit</button></center>
+    </form>
+  </div>
 
-    <div class="footer">
-      <img
-        src="https://loopershowcase.github.io/1-100/loop_btn.png"
-        class="loop_logo"
-      />
-    </div>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-  <script src="script.js"></script>
+  <center>
+    <br />
+    <br />
+    <div>Teachable Machine Image Model</div>
+    <button type="button" onclick="init()" style="width: 10%;">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+    <br />
+    <br />
+  </center>
+
+  <div class="footer">
+    <img src="https://loopershowcase.github.io/1-100/loop_btn.png" class="loop_logo" />
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="/script.js"></script>
+
 </html>
