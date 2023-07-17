@@ -3,11 +3,10 @@ body {
 }
 
 .loop_logo {
-  float: right;
-  width: 7%;
-  position: absolute;
-  right: 10px;
-  bottom: 0;
+  width: 15%;
+  max-width: 100px; /* Adjust the size as needed */
+  margin-left: auto;
+  margin-right: 10px;
   opacity: 0.5;
 }
 
@@ -15,7 +14,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: -15px 10px 0px 10px;
+  padding: 10px;
   justify-content: space-between;
 }
 
@@ -24,17 +23,21 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 #text-output {
   text-align: left;
-  align-items: center;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   height: 300px;
   border-width: 2px;
   border-color: black;
   border-style: dashed;
   margin-bottom: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 input {
@@ -42,6 +45,9 @@ input {
   border-width: 2px;
   border-color: black;
   border-style: dotted;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 button {
@@ -50,6 +56,10 @@ button {
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 button:hover {
